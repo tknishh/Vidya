@@ -14,7 +14,7 @@ def main():
     # Load context data
     context_data = load_context_data('data')
 
-    user_input = st.text_input("Ask your Query")
+    user_input = st.text_input("Ask your Query", label_visibility='always')
 
     st.write("Upload your competitive exam result (optional):")
     uploaded_result_report = st.file_uploader("", type=['pdf'])
